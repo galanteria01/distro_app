@@ -7,6 +7,7 @@ import 'activity/Loading.dart';
 
 void main() {
   runApp(MaterialApp(
+    theme: ThemeData(fontFamily: 'OpenSans'),
     initialRoute: '/loading',
     routes: {
       '/':(context) => DistroList(),

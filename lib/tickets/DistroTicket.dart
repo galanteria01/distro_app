@@ -10,7 +10,13 @@ class DistroTicket extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.pushNamed(context, '/distro',arguments: {
+          "name": distro.name,
+          "imagePath": distro.imagePath,
+          "hugeInfo": distro.hugeInfo,
+        });
+      },
       child: Container(
         child: Card(
           child: Padding(
@@ -42,6 +48,6 @@ class DistroTicket extends StatelessWidget {
           ),
         ),
       ),
-    );;
+    );
   }
 }

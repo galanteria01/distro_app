@@ -22,8 +22,6 @@ class _DistroListState extends State<DistroList> {
     Distro(name: "Garuda Linux",imagePath: "images/garuda.png",littleInfo: "Best linux for hardcore user",hugeInfo: "Lorem ipsum"),
     Distro(name: "Kali Linux",imagePath: "images/kali.png",littleInfo: "Best linux for hardcore user",hugeInfo: "Lorem ipsum"),
     Distro(name: "Parrot Linux",imagePath: "images/parrot.png",littleInfo: "Best linux for hardcore user",hugeInfo: "Lorem ipsum"),
-
-
   ];
 
   @override
@@ -58,7 +56,6 @@ class _DistroListState extends State<DistroList> {
               icon: Icon(Icons.settings),
               label: "Settings",
           ),
-
         ],
       ),
     );
