@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'Developer.dart';
-import 'DistroDetails.dart';
-import 'DistroList.dart';
-import 'Loading.dart';
+import 'activity/Developer.dart';
+import 'activity/DistroDetails.dart';
+import 'activity/DistroList.dart';
+import 'activity/Loading.dart';
 
 void main() {
   runApp(MaterialApp(
