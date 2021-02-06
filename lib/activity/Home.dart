@@ -2,7 +2,6 @@ import 'package:distro/activity/RomList.dart';
 import 'package:distro/activity/Settings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'DistroList.dart';
 
 class Home extends StatefulWidget {
@@ -43,7 +42,6 @@ class _HomeState extends State<Home> {
           "Distroware",
           style: TextStyle(
             color: Colors.black,
-            letterSpacing: 1.2,
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -52,10 +50,9 @@ class _HomeState extends State<Home> {
         currentIndex: _pageIndex,
         onTap: onTabTapped,
         backgroundColor: Colors.white,
-          selectedItemColor: ,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.add_to_queue),
+                icon: Icon(Icons.computer),
                 label: "Distros",
             ),
             BottomNavigationBarItem(

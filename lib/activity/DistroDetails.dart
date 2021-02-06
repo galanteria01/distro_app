@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DistroDetails extends StatefulWidget {
   @override
@@ -10,6 +11,7 @@ class _DistroDetailsState extends State<DistroDetails> {
   String name;
   String imagePath;
   String hugeInfo;
+  String installationMethodUrl;
 
   Map data = {};
 
@@ -19,6 +21,7 @@ class _DistroDetailsState extends State<DistroDetails> {
     name = data['name'];
     imagePath = data["imagePath"];
     hugeInfo = data["hugeInfo"];
+    installationMethodUrl = data["installationMethodUrl"];
 
     return SafeArea(
       child: Scaffold(
@@ -40,7 +43,7 @@ class _DistroDetailsState extends State<DistroDetails> {
                   ),
                    CircleAvatar(
                      backgroundImage: AssetImage(imagePath),
-                     maxRadius: 24.0,
+                     maxRadius: 28.0,
                      backgroundColor: Colors.white60,
                    )
                 ],
@@ -57,35 +60,65 @@ class _DistroDetailsState extends State<DistroDetails> {
                 ),
               ),
             ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                TextButton.icon(
-                  onPressed: () {},
-                  label: Text("Download"),
-                  icon: Icon(Icons.download_rounded),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TextButton.icon(
+                      onPressed: () {},
+                      label: Text("Download"),
+                      icon: Icon(Icons.download_rounded),
+                    ),
+                    TextButton.icon(
+                        onPressed: () {},
+                        icon: Icon(Icons.web),
+                        label: Text("Website")
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 16.0,
                 ),
                 TextButton.icon(
-                    onPressed: () {},
-                    icon: Icon(Icons.web),
-                    label: Text("Website")
+                  label: Text("Installation method"),
+                  icon: Icon(Icons.add_to_queue),
+                  onPressed: () => _launchInstallation(installationMethodUrl),
+                  style: ButtonStyle(
+                  ),
                 ),
               ],
             ),
-            SizedBox(
-              height: 16.0,
-            ),
-            TextButton.icon(
-              label: Text("Installation method"),
-              icon: Icon(Icons.add_to_queue),
-              onPressed: () {},
-              style: ButtonStyle(
-              ),
-            )
           ],
         ),
       ),
     );
+  }
+  _launchInstallation(String url) async {
+    const url = 'https://flutter.io';
+    if (await canLaunch(url)) {
+      await launch(url, forceWebView: true);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchDownload(String url) async {
+    const url = 'https://flutter.io';
+    if (await canLaunch(url)) {
+      await launch(url, forceWebView: true);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  _launchWebsite(String url) async {
+    const url = 'https://flutter.io';
+    if (await canLaunch(url)) {
+      await launch(url, forceWebView: true);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
