@@ -80,52 +80,12 @@ class _DistroListState extends State<DistroList> {
 
   @override
   Widget build(BuildContext context) {
-    _onTap(int index){
-      switch(index){
-        case 0:
-          break;
-        case 1:
-          break;
-        case 2:
-          break;
-      }
-    }
-
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        automaticallyImplyLeading: false,
-        title: Text(
-          "Distros",
-          style: TextStyle(
-              color: Colors.black,
-            letterSpacing: 1.2,
-          ),
-        ),
-      ),
       body: ListView(
         scrollDirection: Axis.vertical,
         children: dummyDistro.map((distro) => DistroTicket(distro: distro,)).toList(),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.add_to_queue),
-              label: "Distros"
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.phone_android),
-            label: "Roms",
-          ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.settings),
-              label: "Settings",
 
-          ),
-        ],
-        onTap: _onTap,
-
-      ),
     );
   }
 }

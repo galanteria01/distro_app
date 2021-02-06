@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'activity/Developer.dart';
 import 'activity/DistroDetails.dart';
 import 'activity/DistroList.dart';
+import 'activity/Home.dart';
 import 'activity/Loading.dart';
 import 'activity/Settings.dart';
 
@@ -13,7 +14,7 @@ void main() {
     ),
     initialRoute: '/loading',
     routes: {
-      '/':(context) => DistroList(),
+      '/':(context) => Home(),
       '/loading':(context) => Loading(),
       '/distro':(context) => DistroDetails(),
       '/developer':(context) => Developer(),
