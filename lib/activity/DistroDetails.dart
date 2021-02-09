@@ -24,6 +24,7 @@ class _DistroDetailsState extends State<DistroDetails> {
 
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.grey[800],
         appBar: null,
         body: Column(
           children: [
@@ -37,13 +38,14 @@ class _DistroDetailsState extends State<DistroDetails> {
                     name,
                     style: TextStyle(
                       fontSize: 32.0,
-                      fontWeight: FontWeight.bold
+                      fontWeight: FontWeight.bold,
+                      color: Colors.amber,
                     ),
                   ),
                    CircleAvatar(
                      backgroundImage: AssetImage(imagePath),
                      maxRadius: 28.0,
-                     backgroundColor: Colors.white60,
+                     backgroundColor: Colors.grey[800],
                    )
                 ],
                 ),
@@ -55,7 +57,8 @@ class _DistroDetailsState extends State<DistroDetails> {
               child: Text(
                 hugeInfo,
                 style: TextStyle(
-                  fontWeight: FontWeight.w400
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white
                 ),
               ),
             ),

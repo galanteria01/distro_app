@@ -21,12 +21,12 @@ class _SettingsState extends State<Settings> {
                 //TODO: Add a dark/light toggle
               },
               child: Card(
-                color: Colors.grey[700],
+                color: Colors.grey[850],
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Row(
                     children: [
-                      Icon(Icons.invert_colors_on_rounded),
+                      Icon(Icons.invert_colors_on_rounded,color: Colors.white,),
                       SizedBox(
                         width: 30.0,
                       ),
@@ -34,6 +34,7 @@ class _SettingsState extends State<Settings> {
                         "Switch Theme",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
+                          color: Colors.white
                         ),
                       ),
                     ],
@@ -46,12 +47,12 @@ class _SettingsState extends State<Settings> {
                 Navigator.pushNamed(context, '/developer');
               },
               child: Card(
-                color: Colors.grey[700],
+                color: Colors.grey[850],
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Row(
                     children: [
-                      Icon(Icons.verified_user),
+                      Icon(Icons.verified_user,color: Colors.white,),
                       SizedBox(
                         width: 30.0,
                       ),
@@ -59,6 +60,7 @@ class _SettingsState extends State<Settings> {
                         "About Developer",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
+                          color: Colors.white
                         ),
                       ),
                     ],
