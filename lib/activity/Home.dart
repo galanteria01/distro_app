@@ -35,13 +35,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey[850],
         automaticallyImplyLeading: false,
         title: Text(
           "Distroware",
           style: TextStyle(
-            color: Colors.black,
+            color: Colors.white,
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -49,11 +50,14 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pageIndex,
         onTap: onTabTapped,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey[900],
+          unselectedItemColor: Colors.white,
+          selectedItemColor: Colors.amber,
           items: [
             BottomNavigationBarItem(
                 icon: Icon(Icons.computer),
                 label: "Distros",
+
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.phone_android),

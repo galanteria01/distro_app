@@ -81,6 +81,7 @@ class _DistroListState extends State<DistroList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[900],
       body: ListView(
         scrollDirection: Axis.vertical,
         children: dummyDistro.map((distro) => DistroTicket(distro: distro,)).toList(),
