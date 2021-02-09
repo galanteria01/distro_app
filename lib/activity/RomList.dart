@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class RomList extends StatefulWidget {
   @override
@@ -8,6 +8,8 @@ class RomList extends StatefulWidget {
 class _RomListState extends State<RomList> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Text("Rom List"),
+    );
   }
 }

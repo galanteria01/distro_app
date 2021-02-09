@@ -19,8 +19,9 @@ class DistroTicket extends StatelessWidget {
       },
       child: Container(
         child: Card(
+          color: Colors.grey[800],
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: EdgeInsets.all(16.0),
             child: Row(
               children: [
                 SizedBox(height: 10.0,),
@@ -37,6 +38,7 @@ class DistroTicket extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18.0,
+                        color: Colors.amber
                       ),
                     ),
                     SizedBox(height: 10.0,),
