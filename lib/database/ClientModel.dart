@@ -13,28 +13,31 @@ String clientToJson(Client data){
 
 class Client {
   int id;
-  String firstName;
-  String lastName;
-  bool blocked;
+  String name;
+  String imagePath;
+  bool littleInfo;
+  String hugeInfo;
 
   Client({
     this.id,
-    this.firstName,
-    this.lastName,
-    this.blocked
+    this.name,
+    this.imagePath,
+    this.littleInfo,
+    this.hugeInfo
 });
 
   factory Client.fromMap(Map<String, dynamic> json) => Client(
     id: json["id"],
-    firstName: json["first_name"],
-    lastName: json["last_name"],
-    blocked: json["blocked"] == 1,
+    name: json["first_name"],
+    imagePath: json["last_name"],
+    littleInfo: json["blocked"] == 1,
   );
 
   Map<String, dynamic> toMap() => {
     "id": id,
-    "first_name": firstName,
-    "last_name": lastName,
-    "blocked": blocked,
+    "name": name,
+    "image_path": imagePath,
+    "little_info": littleInfo,
+    "huge_info": hugeInfo
   };
 }

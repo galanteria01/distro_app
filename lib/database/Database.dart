@@ -33,6 +33,7 @@ initDB() async {
                     "image_path TEXT,"
                     "little_info TEXT,"
                     "huge_info TEXT"
-                    ")");
+                    ")"
+    );
   });
 }
