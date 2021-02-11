@@ -1,3 +1,4 @@
+import 'package:distro/activity/RomDetails.dart';
 import 'package:flutter/material.dart';
 
 import 'activity/Developer.dart';
@@ -17,6 +18,7 @@ void main() {
       '/':(context) => Home(),
       '/loading':(context) => Loading(),
       '/distro':(context) => DistroDetails(),
+      '/rom':(context) => RomDetails(),
       '/developer':(context) => Developer(),
       '/settings':(context) => Settings(),
     },

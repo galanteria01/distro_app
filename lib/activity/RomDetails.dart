@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class DistroDetails extends StatefulWidget {
+class RomDetails extends StatefulWidget {
   @override
-  _DistroDetailsState createState() => _DistroDetailsState();
+  _RomDetailsState createState() => _RomDetailsState();
 }
 
-class _DistroDetailsState extends State<DistroDetails> {
+class _RomDetailsState extends State<RomDetails> {
   String name;
   String imagePath;
   String hugeInfo;
@@ -35,19 +35,19 @@ class _DistroDetailsState extends State<DistroDetails> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                    name,
-                    style: TextStyle(
-                      fontSize: 32.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.amber,
+                      name,
+                      style: TextStyle(
+                        fontSize: 32.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.amber,
+                      ),
                     ),
-                  ),
-                   CircleAvatar(
-                     backgroundImage: AssetImage(imagePath),
-                     maxRadius: 28.0,
-                     backgroundColor: Colors.grey[800],
-                   )
-                ],
+                    CircleAvatar(
+                      // backgroundImage: AssetImage(imagePath),
+                      maxRadius: 28.0,
+                      backgroundColor: Colors.grey[800],
+                    )
+                  ],
                 ),
               ),
             ),
@@ -55,10 +55,11 @@ class _DistroDetailsState extends State<DistroDetails> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                hugeInfo,
+                // hugeInfo,
+                "Gawd",
                 style: TextStyle(
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white
                 ),
               ),
             ),
