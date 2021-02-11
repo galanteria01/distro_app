@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatefulWidget {
@@ -16,6 +15,58 @@ class _SettingsState extends State<Settings> {
 
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            GestureDetector(
+              onTap: () {
+                //TODO: Add a dark/light toggle
+              },
+              child: Card(
+                color: Colors.grey[850],
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    children: [
+                      Icon(Icons.computer,color: Colors.white,),
+                      SizedBox(
+                        width: 30.0,
+                      ),
+                      Text(
+                        "Linux More",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                //TODO: Add a dark/light toggle
+              },
+              child: Card(
+                color: Colors.grey[850],
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    children: [
+                      Icon(Icons.phonelink_setup,color: Colors.white,),
+                      SizedBox(
+                        width: 30.0,
+                      ),
+                      Text(
+                        "AOSP More",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
             GestureDetector(
               onTap: () {
                 //TODO: Add a dark/light toggle

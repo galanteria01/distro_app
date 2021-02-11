@@ -11,10 +11,10 @@ class RomTicket extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/distro',arguments: {
+        Navigator.pushNamed(context, '/rom',arguments: {
           "name": rom.name,
-          "imagePath": rom.imagePath,
-          "hugeInfo": rom.hugeInfo,
+          // "imagePath": rom.imagePath,
+          // "hugeInfo": rom.hugeInfo,
         });
       },
       child: Container(

@@ -28,23 +28,25 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[900],
       appBar: null,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
 
           SpinKitDoubleBounce(
-            color: Colors.black26,
+            color: Colors.amber,
             size: 60.0,
           ),
           SizedBox(
-            height: 30.0,
+            height: 40.0,
           ),
           Text(
             "Distroware",
             style: TextStyle(
               fontSize: 25.0,
-              fontWeight: FontWeight.bold
+              fontWeight: FontWeight.bold,
+              color: Colors.white
             ),
           )
         ],
