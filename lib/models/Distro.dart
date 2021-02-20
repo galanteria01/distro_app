@@ -4,7 +4,7 @@ class Distro {
   String imagePath;
   String littleInfo;
   String hugeInfo;
-  String url;
+  String downloadUrl;
   String installationMethodUrl;
   String basedOn;
   String officialWebsite;
@@ -14,7 +14,7 @@ class Distro {
     this.imagePath,
     this.littleInfo,
     this.hugeInfo,
-    this.url,
+    this.downloadUrl,
     this.installationMethodUrl,
     this.basedOn,
     this.officialWebsite

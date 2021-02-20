@@ -10,10 +10,34 @@ class RomList extends StatefulWidget {
 class _RomListState extends State<RomList> {
   
   List<Rom> dummyRoms = [
-    Rom(name: "LineageOS"),
-    Rom(name: "PotatoProject"),
-    Rom(name: "AICP"),
-    Rom(name: "ShapeshiftOS"),
+    Rom(
+        name: "LineageOS"
+    ),
+    Rom(
+        name: "PotatoProject"
+    ),
+    Rom(
+        name: "AICP"
+    ),
+    Rom(
+        name: "ShapeshiftOS"
+    ),
+    Rom(
+        name: "Pixel Experience"
+    ),
+    Rom(
+        name: "AOSP Extended"
+    ),
+    Rom(
+        name: "Resurrection"
+    ),
+    Rom(
+        name: "NitrogenOS"
+    ),
+    Rom(
+        name: "DotOS"
+    ),
+
   ];
   
   @override
